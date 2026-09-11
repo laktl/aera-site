@@ -387,13 +387,19 @@ main { overflow-x: clip; }
      with zero cropping while still reading as an even bezel — padding
      can't do this, since CSS always resolves padding percentages
      (top/bottom included) against the container's *width*, which distorts
-     a box this tall/narrow and made some browsers crop the bottom. */
+     a box this tall/narrow and made some browsers crop the bottom.
+     The top/bottom and left/right values below are deliberately different
+     (not a matching pair): since this box is much taller than it is wide,
+     an equal percentage on every side would look ~2x thicker top/bottom
+     than left/right in actual pixels. Scaling top/bottom down by the
+     frame's aspect ratio keeps the bezel reading as one even thin width
+     on all four sides. */
   position: absolute;
-  top: 3.2%;
-  right: 3.2%;
-  bottom: 3.2%;
-  left: 3.2%;
-  border-radius: clamp(20px, 6vw, 34px);
+  top: 1%;
+  right: 2.2%;
+  bottom: 1%;
+  left: 2.2%;
+  border-radius: clamp(24px, 7vw, 40px);
   overflow: hidden;
 }
 .phone__screen img {
