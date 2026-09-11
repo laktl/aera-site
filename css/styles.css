@@ -373,25 +373,26 @@ main { overflow-x: clip; }
 .phone { position: relative; }
 .phone__frame {
   position: relative;
-  /* Not the screenshot's own 1206/2622 ratio on purpose: padding is always
-     a % of *width* in CSS (top/bottom included), so shrinking a box this
-     tall by an equal percentage on every side leaves an inner area slightly
-     squatter than the source image — which then gets cropped top and
-     bottom by object-fit: cover. This ratio is pre-compensated so that
-     after the 3.2% padding below is subtracted, the inner area matches the
-     screenshot exactly and nothing gets cropped, while the bezel still
-     reads as an even width on all four sides. */
-  aspect-ratio: 1206 / 2531.4;
+  aspect-ratio: 1206 / 2622;
   background: #000;
   border-radius: clamp(28px, 8vw, 46px);
-  padding: 3.2%;
   box-shadow: var(--shadow-phone);
   border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
 }
 .phone__screen {
-  width: 100%;
-  height: 100%;
+  /* An inset (not padding) on an absolutely positioned box: top/bottom
+     resolve against the frame's height and left/right against its width,
+     each on its own axis. That keeps the screenshot's exact aspect ratio
+     with zero cropping while still reading as an even bezel — padding
+     can't do this, since CSS always resolves padding percentages
+     (top/bottom included) against the container's *width*, which distorts
+     a box this tall/narrow and made some browsers crop the bottom. */
+  position: absolute;
+  top: 3.2%;
+  right: 3.2%;
+  bottom: 3.2%;
+  left: 3.2%;
   border-radius: clamp(20px, 6vw, 34px);
   overflow: hidden;
 }
