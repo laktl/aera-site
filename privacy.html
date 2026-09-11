@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="privacy.metaTitle">Privacy Policy — Aera</title>
+<meta name="description" content="Aera privacy policy: what data stays on your device, what permissions the app asks for, and how to contact us." data-i18n-content="privacy.metaDescription">
+<link rel="icon" href="img/icon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="img/icon-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/icon-light.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content" data-i18n="nav.skip">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Aera — home" data-i18n-aria-label="nav.homeAria">
+      <span class="brand__icon">
+        <img class="shot shot--light" src="img/icon-light.png" alt="" width="64" height="64">
+        <img class="shot shot--dark" src="img/icon-dark.png" alt="" width="64" height="64">
+      </span>
+      <span class="brand__name">Aera</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary" data-i18n-aria-label="nav.primaryAria">
+      <a href="index.html#library" data-i18n="nav.library">Library</a>
+      <a href="index.html#gestures" data-i18n="nav.gestures">Gestures</a>
+      <a href="index.html#future" data-i18n="nav.future">What's next</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Change language" data-i18n-aria-label="nav.langAria">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+          <span class="lang-toggle__code" id="langToggleCode">EN</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+          <li role="option" data-lang="be"><button type="button">Беларуская</button></li>
+          <li role="option" data-lang="bg"><button type="button">Български</button></li>
+          <li role="option" data-lang="de"><button type="button">Deutsch</button></li>
+          <li role="option" data-lang="en"><button type="button">English</button></li>
+          <li role="option" data-lang="ru"><button type="button">Русский</button></li>
+          <li role="option" data-lang="uk"><button type="button">Українська</button></li>
+        </ul>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme" data-i18n-aria-label="nav.themeAria">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g class="rays"><line x1="12" y1="1.5" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22.5"/><line x1="1.5" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22.5" y2="12"/><line x1="4.4" y1="4.4" x2="6.5" y2="6.5"/><line x1="17.5" y1="17.5" x2="19.6" y2="19.6"/><line x1="4.4" y1="19.6" x2="6.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="19.6" y2="4.4"/></g></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+      </button>
+      <a class="btn btn--small btn--ghost" href="index.html" data-i18n="nav.backToSite">Back to site</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="legal" id="content">
+    <p class="legal__eyebrow" data-i18n="privacy.eyebrow">Aera · Last updated: 30 August 2026</p>
+    <h1 data-i18n="privacy.h1">Privacy Policy</h1>
+
+    <p data-i18n="privacy.intro">Aera is a personal, on-device music player for iPhone. This policy explains how Aera handles your information.</p>
+
+    <h2 data-i18n="privacy.summaryH2">Summary</h2>
+    <p data-i18n="privacy.summaryBody">Aera does not collect, transmit, sell, or share any personal data. There are no accounts, no analytics, no advertising, and no third-party tracking SDKs.</p>
+
+    <h2 data-i18n="privacy.dataH2">Data stored on your device</h2>
+    <p data-i18n="privacy.dataIntro">Everything you create or import in Aera is stored only on your device, inside the app's private container:</p>
+    <ul>
+      <li data-i18n="privacy.dataLi1">imported audio files and their metadata (title, artist, album, genre);</li>
+      <li data-i18n="privacy.dataLi2">track artwork, including photos you choose or take for a track;</li>
+      <li data-i18n="privacy.dataLi3">playlists, playback queue, and play/search history;</li>
+      <li data-i18n="privacy.dataLi4">app settings (language, theme, accent color).</li>
+    </ul>
+    <p data-i18n="privacy.dataOutro">This data never leaves your device through Aera. It is removed when you delete the corresponding item or uninstall the app. Device or iCloud backups, if you enable them, are handled by Apple and covered by Apple's privacy policy, not ours.</p>
+
+    <h2 data-i18n="privacy.permissionsH2">Permissions</h2>
+    <ul>
+      <li data-i18n-html="privacy.permissionsLi"><strong>Camera and Photo Library</strong> — used solely so you can set a photo as a track's artwork. Selected or captured images are saved only to your local library and are never uploaded. You can decline these permissions and still use every other feature of the app.</li>
+    </ul>
+
+    <h2 data-i18n="privacy.networkH2">Network use</h2>
+    <p data-i18n="privacy.networkBody">Aera has no backend and makes no network requests of its own. When editing a track you may tap a button that opens your device's web browser to search for artwork or lyrics. That opens a third-party search engine in Safari, governed by that provider's own privacy policy; Aera itself sends them nothing.</p>
+
+    <h2 data-i18n="privacy.childrenH2">Children</h2>
+    <p data-i18n="privacy.childrenBody">Aera does not knowingly collect data from anyone, including children.</p>
+
+    <h2 data-i18n="privacy.changesH2">Changes to this policy</h2>
+    <p data-i18n="privacy.changesBody">Any updates will be posted on this page with a new "Last updated" date.</p>
+
+    <h2 data-i18n="privacy.contactH2">Contact</h2>
+    <p data-i18n-html="privacy.contactBody">Questions about this policy: <a href="mailto:support.area.dev@gmail.com">support.area.dev@gmail.com</a></p>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand-group">
+      <a class="brand brand--footer" href="index.html" aria-label="Aera — home" data-i18n-aria-label="nav.homeAria">
+        <span class="brand__icon brand__icon--sm">
+          <img class="shot shot--light" src="img/icon-light.png" alt="" width="64" height="64">
+          <img class="shot shot--dark" src="img/icon-dark.png" alt="" width="64" height="64">
+        </span>
+        <span class="brand__name">Aera</span>
+      </a>
+      <nav class="footer__links" aria-label="More" data-i18n-aria-label="footer.moreAria">
+        <a class="btn btn--small btn--ghost" href="support.html" data-i18n="footer.support">Support</a>
+        <a class="btn btn--small btn--ghost" href="index.html" data-i18n="nav.backToSite">Back to site</a>
+      </nav>
+    </div>
+    <p data-i18n="footer.tagline">A local player: no account, no cloud, nothing extra.</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>

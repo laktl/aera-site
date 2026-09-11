@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="support.metaTitle">Support — Aera</title>
+<meta name="description" content="Get help with Aera: contact support and find answers to frequently asked questions." data-i18n-content="support.metaDescription">
+<link rel="icon" href="img/icon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="img/icon-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/icon-light.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content" data-i18n="nav.skip">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Aera — home" data-i18n-aria-label="nav.homeAria">
+      <span class="brand__icon">
+        <img class="shot shot--light" src="img/icon-light.png" alt="" width="64" height="64">
+        <img class="shot shot--dark" src="img/icon-dark.png" alt="" width="64" height="64">
+      </span>
+      <span class="brand__name">Aera</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary" data-i18n-aria-label="nav.primaryAria">
+      <a href="index.html#library" data-i18n="nav.library">Library</a>
+      <a href="index.html#gestures" data-i18n="nav.gestures">Gestures</a>
+      <a href="index.html#future" data-i18n="nav.future">What's next</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Change language" data-i18n-aria-label="nav.langAria">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+          <span class="lang-toggle__code" id="langToggleCode">EN</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+          <li role="option" data-lang="be"><button type="button">Беларуская</button></li>
+          <li role="option" data-lang="bg"><button type="button">Български</button></li>
+          <li role="option" data-lang="de"><button type="button">Deutsch</button></li>
+          <li role="option" data-lang="en"><button type="button">English</button></li>
+          <li role="option" data-lang="ru"><button type="button">Русский</button></li>
+          <li role="option" data-lang="uk"><button type="button">Українська</button></li>
+        </ul>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme" data-i18n-aria-label="nav.themeAria">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g class="rays"><line x1="12" y1="1.5" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22.5"/><line x1="1.5" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22.5" y2="12"/><line x1="4.4" y1="4.4" x2="6.5" y2="6.5"/><line x1="17.5" y1="17.5" x2="19.6" y2="19.6"/><line x1="4.4" y1="19.6" x2="6.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="19.6" y2="4.4"/></g></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+      </button>
+      <a class="btn btn--small btn--ghost" href="index.html" data-i18n="nav.backToSite">Back to site</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="legal" id="content">
+    <p class="legal__eyebrow">Aera</p>
+    <h1 data-i18n="support.h1">Support</h1>
+    <p class="legal__lead" data-i18n="support.lead">A personal, on-device music player for iPhone.</p>
+
+    <h2 data-i18n="support.getHelpH2">Get help</h2>
+    <div class="support-card">
+      <p data-i18n-html="support.emailBody"><strong>Email:</strong> <a href="mailto:support.area.dev@gmail.com">support.area.dev@gmail.com</a></p>
+      <p data-i18n="support.responseTime">Typical response time: 2–3 business days</p>
+    </div>
+
+    <h2 data-i18n="support.faqH2">Frequently asked questions</h2>
+    <div class="faq">
+      <details class="faq__item">
+        <summary data-i18n="support.faq1Q">How do I add music?</summary>
+        <p data-i18n="support.faq1A">Open any audio file from the Files app and choose Share → Aera, or use Import inside the app. Your library stays empty until you add tracks.</p>
+      </details>
+      <details class="faq__item">
+        <summary data-i18n="support.faq2Q">Where are my files stored?</summary>
+        <p data-i18n="support.faq2A">On your device only — in Aera's private storage and under On My iPhone → Aera in the Files app. Nothing is uploaded anywhere.</p>
+      </details>
+      <details class="faq__item">
+        <summary data-i18n="support.faq3Q">How do I set custom artwork for a track?</summary>
+        <p data-i18n="support.faq3A">Edit a track, tap the artwork, then choose a photo from your library, take a new photo, paste an image, or search the web.</p>
+      </details>
+      <details class="faq__item">
+        <summary data-i18n="support.faq4Q">Does Aera work offline?</summary>
+        <p data-i18n="support.faq4A">Yes. Aera has no accounts and no server — it works entirely offline.</p>
+      </details>
+      <details class="faq__item">
+        <summary data-i18n="support.faq5Q">How do I delete a track?</summary>
+        <p data-i18n="support.faq5A">Swipe a track in your library and remove it. Removing a track from All Tracks deletes the file and its record; removing it from another playlist only unlists it there.</p>
+      </details>
+    </div>
+
+    <h2 data-i18n="support.privacyH2">Privacy</h2>
+    <p data-i18n-html="support.privacyBody">Aera collects no data. See the full <a href="privacy.html">Privacy Policy</a>.</p>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand-group">
+      <a class="brand brand--footer" href="index.html" aria-label="Aera — home" data-i18n-aria-label="nav.homeAria">
+        <span class="brand__icon brand__icon--sm">
+          <img class="shot shot--light" src="img/icon-light.png" alt="" width="64" height="64">
+          <img class="shot shot--dark" src="img/icon-dark.png" alt="" width="64" height="64">
+        </span>
+        <span class="brand__name">Aera</span>
+      </a>
+      <nav class="footer__links" aria-label="More" data-i18n-aria-label="footer.moreAria">
+        <a class="btn btn--small btn--ghost" href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a class="btn btn--small btn--ghost" href="index.html" data-i18n="nav.backToSite">Back to site</a>
+      </nav>
+    </div>
+    <p data-i18n="footer.tagline">A local player: no account, no cloud, nothing extra.</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>

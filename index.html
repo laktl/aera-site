@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="index.metaTitle">Aera — личный музыкальный плеер</title>
+<meta name="description" content="Aera — музыкальный плеер, который хранит всё на устройстве. Никаких вкладок, спрятанных настроек и мусора — только ваша музыка." data-i18n-content="index.metaDescription">
+<link rel="icon" href="img/icon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="img/icon-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/icon-light.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#top" data-i18n="nav.skip">Перейти к содержимому</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Aera — на главную" data-i18n-aria-label="nav.homeAria">
+      <span class="brand__icon">
+        <img class="shot shot--light" src="img/icon-light.png" alt="" width="64" height="64">
+        <img class="shot shot--dark" src="img/icon-dark.png" alt="" width="64" height="64">
+      </span>
+      <span class="brand__name">Aera</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Основная навигация" data-i18n-aria-label="nav.primaryAria">
+      <a href="#library" data-i18n="nav.library">Библиотека</a>
+      <a href="#gestures" data-i18n="nav.gestures">Жесты</a>
+      <a href="#future" data-i18n="nav.future">Дальше</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Изменить язык" data-i18n-aria-label="nav.langAria">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+          <span class="lang-toggle__code" id="langToggleCode">RU</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+          <li role="option" data-lang="be"><button type="button">Беларуская</button></li>
+          <li role="option" data-lang="bg"><button type="button">Български</button></li>
+          <li role="option" data-lang="de"><button type="button">Deutsch</button></li>
+          <li role="option" data-lang="en"><button type="button">English</button></li>
+          <li role="option" data-lang="ru"><button type="button">Русский</button></li>
+          <li role="option" data-lang="uk"><button type="button">Українська</button></li>
+        </ul>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Переключить тему" data-i18n-aria-label="nav.themeAria">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g class="rays"><line x1="12" y1="1.5" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22.5"/><line x1="1.5" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22.5" y2="12"/><line x1="4.4" y1="4.4" x2="6.5" y2="6.5"/><line x1="17.5" y1="17.5" x2="19.6" y2="19.6"/><line x1="4.4" y1="19.6" x2="6.5" y2="17.5"/><line x1="17.5" y1="6.5" x2="19.6" y2="4.4"/></g></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+      </button>
+      <a class="btn btn--small btn--primary" href="https://testflight.apple.com/join/pvtwaEbs" target="_blank" rel="noopener noreferrer" data-i18n="nav.download">Скачать</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero__text reveal">
+      <p class="eyebrow">Aera</p>
+      <h1 class="hero__title" data-i18n-html="hero.title">Личный музыкальный плеер,<br>который хранит всё на устройстве</h1>
+      <p class="hero__lead" data-i18n="hero.lead">Ничего лишнего. Никаких вкладок, спрятанных настроек и мусора — только ваша музыка.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--large" href="#gestures" data-i18n="hero.ctaPrimary">Смотреть, как это работает</a>
+        <a class="btn btn--ghost btn--large" href="https://testflight.apple.com/join/pvtwaEbs" target="_blank" rel="noopener noreferrer" data-i18n="nav.download">Скачать</a>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal reveal--delay">
+      <div class="phone phone--back">
+        <div class="phone__frame">
+          <div class="phone__island"></div>
+          <div class="phone__screen">
+            <img class="shot shot--light" src="img/track-white.png" alt="Полноэкранный плеер Aera с обложкой альбома" data-i18n-alt="hero.imgTrackAlt" width="1206" height="2622" loading="eager">
+            <img class="shot shot--dark" src="img/track-black.png" alt="Полноэкранный плеер Aera с обложкой альбома" data-i18n-alt="hero.imgTrackAlt" width="1206" height="2622" loading="eager">
+          </div>
+        </div>
+      </div>
+      <div class="phone phone--front">
+        <div class="phone__frame">
+          <div class="phone__island"></div>
+          <div class="phone__screen">
+            <img class="shot shot--light" src="img/main-screen-white.png" alt="Главный экран Aera «Your Music» с мини-плеером" data-i18n-alt="hero.imgMainAlt" width="1206" height="2622" loading="eager">
+            <img class="shot shot--dark" src="img/main-screen-black.png" alt="Главный экран Aera «Your Music» с мини-плеером" data-i18n-alt="hero.imgMainAlt" width="1206" height="2622" loading="eager">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="library">
+    <div class="section__grid">
+      <div class="section__text reveal">
+        <p class="kicker" data-i18n="library.kicker">Вся библиотека под рукой</p>
+        <h2 data-i18n="library.heading">Добавляйте, собирайте, находите</h2>
+        <p class="section__lead" data-i18n="library.lead">Добавляйте треки, собирайте плейлисты и находите нужное за секунды — без блужданий по меню.</p>
+
+        <div class="demo-card">
+          <p class="demo-card__label" data-i18n="library.demoLabel">Живой пример: тот же поиск, что в приложении</p>
+          <div class="demo-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21"/></svg>
+            <input class="demo-search__input" id="demoSearchInput" type="text" placeholder="Поиск" aria-label="Поиск по демо-библиотеке" data-i18n-placeholder="library.searchPlaceholder" data-i18n-aria-label="library.searchAria" autocomplete="off">
+          </div>
+          <ul class="demo-tracks">
+            <li class="demo-track" data-title="qelvorith" data-artist="vexomora">
+              <span class="demo-track__meta"><strong>qelvorith</strong><em>vexomora</em></span>
+              <span class="demo-track__duration">3:38</span>
+            </li>
+            <li class="demo-track" data-title="zanmure" data-artist="zirnvel">
+              <span class="demo-track__meta"><strong>zanmure</strong><em>zirnvel</em></span>
+              <span class="demo-track__duration">4:02</span>
+            </li>
+            <li class="demo-track" data-title="vrynnodel" data-artist="nulvaryn">
+              <span class="demo-track__meta"><strong>vrynnodel</strong><em>nulvaryn</em></span>
+              <span class="demo-track__duration">3:58</span>
+            </li>
+            <li class="demo-track" data-title="krovynell" data-artist="orvynael">
+              <span class="demo-track__meta"><strong>krovynell</strong><em>orvynael</em></span>
+              <span class="demo-track__duration">3:24</span>
+            </li>
+            <li class="demo-track" data-title="sytharnoe" data-artist="qelmira">
+              <span class="demo-track__meta"><strong>sytharnoe</strong><em>qelmira</em></span>
+              <span class="demo-track__duration">2:47</span>
+            </li>
+          </ul>
+          <p class="demo-card__empty" id="demoSearchEmpty" hidden data-i18n="library.emptyResult">Ничего не найдено</p>
+          <p class="demo-card__hint" data-i18n="library.demoHint">Начните печатать — приложение ищет сразу по трекам, альбомам, плейлистам и исполнителям, без отдельной кнопки поиска.</p>
+        </div>
+      </div>
+
+      <div class="section__visual reveal reveal--delay">
+        <div class="phone phone--solo">
+          <div class="phone__frame">
+            <div class="phone__island"></div>
+            <div class="phone__screen">
+              <img class="shot shot--light" src="img/library-white.png" alt="Экран «Library» с плейлистами Aera" data-i18n-alt="library.imgAlt" width="1206" height="2622" loading="lazy">
+              <img class="shot shot--dark" src="img/library-black.png" alt="Экран «Library» с плейлистами Aera" data-i18n-alt="library.imgAlt" width="1206" height="2622" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gestures">
+    <div class="section__grid">
+      <div class="section__visual section__visual--pair reveal reveal--delay">
+        <div class="phone phone--pair">
+          <div class="phone__frame">
+            <div class="phone__island"></div>
+            <div class="phone__screen">
+              <img class="shot shot--light" src="img/settings-white.png" alt="Экран настроек Aera: импорт, экспорт и проверка дубликатов" data-i18n-alt="gestures.imgSettingsAlt" width="1206" height="2622" loading="lazy">
+              <img class="shot shot--dark" src="img/settings-black.png" alt="Экран настроек Aera: импорт, экспорт и проверка дубликатов" data-i18n-alt="gestures.imgSettingsAlt" width="1206" height="2622" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="phone phone--pair phone--pair-offset">
+          <div class="phone__frame">
+            <div class="phone__island"></div>
+            <div class="phone__screen">
+              <img class="shot shot--light" src="img/track-white.png" alt="Экран трека с редактированием тегов в Aera" data-i18n-alt="gestures.imgTrackAlt" width="1206" height="2622" loading="lazy">
+              <img class="shot shot--dark" src="img/track-black.png" alt="Экран трека с редактированием тегов в Aera" data-i18n-alt="gestures.imgTrackAlt" width="1206" height="2622" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__text reveal">
+        <p class="kicker" data-i18n="gestures.kicker">Каждый жест делает очевидное</p>
+        <h2 data-i18n="gestures.heading">Учиться нечему. Найдётся за секунды</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21"/></svg>
+            <p data-i18n="gestures.feature1">Поиск сразу по трекам, альбомам, плейлистам и исполнителям.</p>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+            <p data-i18n="gestures.feature2">Фильтр по частоте прослушивания.</p>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            <p data-i18n="gestures.feature3">Свободный импорт и экспорт треков с проверкой на дубликаты.</p>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.6-5.4L16.2 4a2 2 0 0 1 2.8 0l1 1a2 2 0 0 1 0 2.8L9.4 18.4 4 20z"/></svg>
+            <p data-i18n="gestures.feature4">Удобный редактор тегов: название, исполнитель, альбом и обложка.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="future" id="future">
+    <div class="future__inner reveal">
+      <p class="kicker" data-i18n="future.kicker">Дальше — только лучше</p>
+      <h2 data-i18n="future.heading">Aera активно развивается</h2>
+      <p class="future__lead" data-i18n="future.lead">Новые возможности и улучшения выходят регулярно, а ваши отзывы определяют, что будет дальше.</p>
+      <div class="future__actions">
+        <a class="btn btn--large btn--primary" href="https://testflight.apple.com/join/pvtwaEbs" target="_blank" rel="noopener noreferrer" data-i18n="future.cta">Скачать Aera</a>
+      </div>
+      <p class="future__note" data-i18n="future.note">Через TestFlight — бета-программа Apple для тестирования приложений</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand-group">
+      <a class="brand brand--footer" href="#top" aria-label="Aera — на главную" data-i18n-aria-label="nav.homeAria">
+        <span class="brand__icon brand__icon--sm">
+          <img class="shot shot--light" src="img/icon-light.png" alt="" width="64" height="64">
+          <img class="shot shot--dark" src="img/icon-dark.png" alt="" width="64" height="64">
+        </span>
+        <span class="brand__name">Aera</span>
+      </a>
+      <nav class="footer__links" aria-label="Дополнительно" data-i18n-aria-label="footer.moreAria">
+        <a class="btn btn--small btn--ghost" href="support.html" data-i18n="footer.support">Поддержка</a>
+        <a class="btn btn--small btn--ghost" href="privacy.html" data-i18n="footer.privacy">Конфиденциальность</a>
+      </nav>
+    </div>
+    <p data-i18n="footer.tagline">Локальный плеер: без аккаунта, без облака, без лишнего.</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
