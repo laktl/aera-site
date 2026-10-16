@@ -56,7 +56,7 @@
 
 <main>
   <article class="legal" id="content">
-    <p class="legal__eyebrow" data-i18n="privacy.eyebrow">Aera · Last updated: 30 August 2026</p>
+    <p class="legal__eyebrow" data-i18n="privacy.eyebrow">Aera · Last updated: 9 October 2026</p>
     <h1 data-i18n="privacy.h1">Privacy Policy</h1>
 
     <p data-i18n="privacy.intro">Aera is a personal, on-device music player for iPhone. This policy explains how Aera handles your information.</p>
@@ -70,7 +70,8 @@
       <li data-i18n="privacy.dataLi1">imported audio files and their metadata (title, artist, album, genre);</li>
       <li data-i18n="privacy.dataLi2">track artwork, including photos you choose or take for a track;</li>
       <li data-i18n="privacy.dataLi3">playlists, playback queue, and play/search history;</li>
-      <li data-i18n="privacy.dataLi4">app settings (language, theme, accent color).</li>
+      <li data-i18n="privacy.dataLi4">app settings (language, theme, accent color);</li>
+      <li data-i18n="privacy.dataLi5">recognized song lyrics and, if you downloaded it, the lyrics recognition model.</li>
     </ul>
     <p data-i18n="privacy.dataOutro">This data never leaves your device through Aera. It is removed when you delete the corresponding item or uninstall the app. Device or iCloud backups, if you enable them, are handled by Apple and covered by Apple's privacy policy, not ours.</p>
 
@@ -80,7 +81,7 @@
     </ul>
 
     <h2 data-i18n="privacy.networkH2">Network use</h2>
-    <p data-i18n="privacy.networkBody">Aera has no backend and makes no network requests of its own. When editing a track you may tap a button that opens your device's web browser to search for artwork or lyrics. That opens a third-party search engine in Safari, governed by that provider's own privacy policy; Aera itself sends them nothing.</p>
+    <p data-i18n="privacy.networkBody">Aera has no backend and no accounts. The app makes one kind of network request, and only when you ask for it: when you tap Download Model in Settings → Lyrics Recognition, Aera downloads the open-source Whisper speech recognition model (about 1.6 GB) from Hugging Face (huggingface.co). This request contains no personal data — only what any download sends, such as your IP address, which Hugging Face handles under its own privacy policy. The model is stored in the app's private container, excluded from backups, and can be deleted in Settings at any time. Lyrics recognition runs entirely on your device: your audio files and the recognized lyrics are never uploaded. When editing a track you may also tap a button that opens your device's web browser to search for artwork or lyrics. That opens a third-party search engine in Safari, governed by that provider's own privacy policy; Aera itself sends them nothing.</p>
 
     <h2 data-i18n="privacy.childrenH2">Children</h2>
     <p data-i18n="privacy.childrenBody">Aera does not knowingly collect data from anyone, including children.</p>
